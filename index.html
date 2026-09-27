@@ -1,0 +1,155 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>My First Web Page</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+ </head>
+ <body> 
+      <header>
+        <h1>Welcome to My Personal Website</h1>
+        <p>Kasamba Faith Masinja – 202508329</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#hobbies">My Hobbies</a>
+        <a href="#learning">My Learning Plan</a>
+        <a href="#photos">My Photos</a>
+        <a href="#media">My Media</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.w3schools.com" target="_blank">Learn Web Development</a>
+    </nav>
+
+    <main>
+
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name is Kasamba Faith Masinja and I am a student at Mulungushi University. 
+                I am currently studying Introduction to Web Technologies. I enjoy learning how websites 
+                are built and I am excited to improve my skills in HTML, CSS and later JavaScript. 
+                In my free time I like baking, shopping and watching movies. This website is my first 
+                step towards becoming a better web developer.
+            </p>
+        </section>
+
+        <section id="hobbies" class="content-section">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Baking</li>
+                <li>Shopping</li>
+                <li>Watching movies</li>
+            </ul>
+        </section>
+
+        <section id="learning" class="content-section">
+            <h2>My Learning Plan</h2>
+            <p>Here are the steps I will take to improve my web development skills:</p>
+            <ol>
+                <li>Practice HTML structure every day for at least 30 minutes.</li>
+                <li>Learn CSS styling and create different layouts.</li>
+                <li>Build small practice projects and review them regularly.</li>
+            </ol>
+
+            <table>
+    <caption>My Weekly Web Learning Plan</caption>
+    <thead>
+        <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Practice Task</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Monday</td>
+            <td>HTML Structure</td>
+            <td>Create a simple webpage with headings and paragraphs</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>CSS Styling</td>
+            <td>Style text colours, fonts and add padding</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>Images & Links</td>
+            <td>Add photos and working navigation links</td>
+        </tr>
+    </tbody>
+</table>
+        </section>
+
+        <section id="photos" class="content-section">
+            <h2>My Photos</h2>
+
+        <figure>
+    <img src="images/photo1.jpeg" alt="A photo of me smiling">
+    <figcaption>This is a photo of me</figcaption>
+</figure>
+
+<figure>
+    <img src="images/photo2.jpeg" alt="A photo related to one of my hobbies">
+    <figcaption>One of my hobbies</figcaption>
+</figure>
+
+<figure>
+    <img src="images/photo3.jpeg" alt="Another personal photo">
+    <figcaption>Another moment from my life</figcaption>
+</figure>
+</section>
+
+<section id="media" class="content-section">
+        <h2>My Media</h2>
+
+        <h3>My Introduction Video</h3>
+<video controls width="100%">
+    <source src="videos/intro.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<p>
+    In this video I introduce myself. I say my name is Kasamba Faith Masinja. 
+    I am a 2nd year Data Science student and I hope to learn how to build 
+    responsive and interactive websites using HTML, CSS, and JavaScript. 
+    I also talk about two of my hobbies.
+</p>
+
+<h3>My Audio Clip</h3>
+<audio controls>
+    <source src="videos/voice.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<p>
+    This audio recording talks about one of my hobbies and why I enjoy it.
+</p>
+ </section>
+
+ <section id="contact" class="content-section">
+        <h2>Contact</h2>
+        <p>This form is for demonstration only. It does not send any data.</p>
+
+<form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="topic">Topic:</label>
+    <input type="text" id="topic" name="topic">
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+</form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kasamba Faith Masinja. All rights reserved.</p>
+    </footer>
+ </body>
+ </html>  
