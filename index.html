@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="css/styles.css"> 
  </head>
  <body> 
-      <header>
-        <h1>Welcome to My Personal Website</h1>
-        <p>Kasamba Faith Masinja – 202508329</p>
-    </header>
+ <header>
+    <h1>Kasamba Faith Masinja</h1>
+    <p class="subtitle">2nd Year Data Science Student | Mulungushi University</p>
+    <p class="intro-text">
+        Welcome to my personal portfolio. I am learning web technologies and building interactive websites.
+    </p>
+    <a href="#projects" class="btn">View My Projects</a>
+    <button id="themeToggle" class="btn">Switch to Dark Mode</button>
+</header>
 
     <nav>
         <a href="#about">About Me</a>
@@ -20,6 +25,7 @@
         <a href="#media">My Media</a>
         <a href="#contact">Contact</a>
         <a href="https://www.w3schools.com" target="_blank">Learn Web Development</a>
+        <a href="#projects">My Projects</a>
     </nav>
 
     <main>
@@ -82,6 +88,35 @@
 </table>
         </section>
 
+        <section id="projects" class="content-section">
+    <h2>My Projects & Skills</h2>
+    <p>Here are some of the skills and small projects I have worked on while learning web technologies:</p>
+
+    <div class="project-item">
+        <h3>Personal Website (Activity 2)</h3>
+        <button class="toggle-btn btn">Show Details</button>
+        <div class="project-details" style="display: none;">
+            <p>Built a complete personal website using HTML5 and CSS, including a photo gallery, video, audio and a contact form.</p>
+        </div>
+    </div>
+
+    <div class="project-item">
+        <h3>Responsive Design</h3>
+        <button class="toggle-btn btn">Show Details</button>
+        <div class="project-details" style="display: none;">
+            <p>Learned how to make websites look good on both computers and mobile phones using media queries and flexible layouts.</p>
+        </div>
+    </div>
+
+    <div class="project-item">
+        <h3>JavaScript Interactivity</h3>
+        <button class="toggle-btn btn">Show Details</button>
+        <div class="project-details" style="display: none;">
+            <p>Currently learning how to add interactive features such as form validation, theme switching and dynamic content using JavaScript.</p>
+        </div>
+    </div>
+</section>
+
         <section id="photos" class="content-section">
             <h2>My Photos</h2>
 
@@ -92,7 +127,7 @@
 
 <figure>
     <img src="images/photo2.jpeg" alt="A photo related to one of my hobbies">
-    <figcaption>One of my hobbies</figcaption>
+    <figcaption>This was a great day</figcaption>
 </figure>
 
 <figure>
@@ -127,29 +162,39 @@
  </section>
 
  <section id="contact" class="content-section">
-        <h2>Contact</h2>
-        <p>This form is for demonstration only. It does not send any data.</p>
+    <h2>Contact</h2>
+    <p>Browser demonstration only — no message is sent.</p>
 
-<form action="#" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+    <form id="contactForm" action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <span id="nameError" class="error"></span>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="emailError" class="error"></span>
 
-    <label for="topic">Topic:</label>
-    <input type="text" id="topic" name="topic">
+        <label for="topic">Topic:</label>
+        <input type="text" id="topic" name="topic">
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <span id="messageError" class="error"></span>
 
-    <button type="submit">Send Message</button>
-</form>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div id="formPreview" class="preview" style="display: none;">
+        <h3>Form Preview (Validated)</h3>
+        <p id="previewContent"></p>
+    </div>
+</section>
 
     </main>
 
     <footer>
         <p>&copy; 2026 Kasamba Faith Masinja. All rights reserved.</p>
     </footer>
+    <script src="js/script.js" defer></script>
  </body>
  </html>  
